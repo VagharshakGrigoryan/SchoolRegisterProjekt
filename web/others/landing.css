@@ -1,0 +1,20 @@
+body {
+    background: url("../pic/back-to-school.png") no-repeat center;
+
+    background-size: cover;
+}
+
+#top {
+    margin: 15%;
+    text-align: center;
+    padding: 8%;
+    border: 2px solid grey;
+    box-shadow: 2px 5px darkgrey;
+    background: #ffffff87;
+}
+
+.btn-primary {
+    padding: 20px;
+    font-size: 20px;
+    width: 500px;
+}
