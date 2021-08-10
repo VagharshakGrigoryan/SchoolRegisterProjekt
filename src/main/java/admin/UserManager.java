@@ -14,8 +14,8 @@ public class UserManager {
 
     public void addUser(User user) {
         try {
-            String query = "INSERT INTO user (`name`,`surname`,`email`,`password`,`region`,`gender`,`birthday` ) " +
-                    "VALUES(?,?,?,?,?,?,?);";
+            String query = "INSERT INTO user (`name`,`surname`,`email`,`password`,`region`,`gender`,`birthday`,pic_url ) " +
+                    "VALUES(?,?,?,?,?,?,?,?);";
             PreparedStatement pStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             pStatement.setString(1, user.getName());
             pStatement.setString(2, user.getSurname());
@@ -24,6 +24,8 @@ public class UserManager {
             pStatement.setString(5, user.getRegion());
             pStatement.setString(6, user .getGender());
             pStatement.setString(7, sdf.format(user.getBirthday()));
+            pStatement.setString(8, user.getPicUrl());
+
             System.out.println(query);
             pStatement.executeUpdate();
             ResultSet generatedKeys = pStatement.getGeneratedKeys();
@@ -41,9 +43,9 @@ public class UserManager {
             Statement statement = connection.createStatement();
             String query = String.format("UPDATE user SET name = " +
                             "'%s', surname = '%s', email='%s',password='%s'," +
-                            "region='%s',gender='%s',birthday='%s', WHERE id=" + user.getId(),
+                            "region='%s',gender='%s',birthday='%s',pic_url='%s' WHERE id=" + user.getId(),
                     user.getName(), user.getSurname(), user.getEmail(), user.getPassword(),
-                    user.getRegion(),user.getGender(),user.getBirthday());
+                    user.getRegion(),user.getGender(),user.getBirthday(),user.getPicUrl());
             System.out.println(query);
             statement.executeUpdate(query);
         } catch (SQLException throwables) {
@@ -68,6 +70,8 @@ public class UserManager {
                         .region(resultSet.getString(6))
                         .gender(resultSet.getString(7))
                         .birthday(resultSet.getDate(8))
+                        .picUrl(resultSet.getString(9))
+
                         .build();
                 users.add(user);
             }
@@ -94,6 +98,8 @@ public class UserManager {
                         .region(resultSet.getString(6))
                         .gender(resultSet.getString(7))
                         .birthday(resultSet.getDate(8))
+                        .picUrl(resultSet.getString(9))
+
                         .build();
                 users.add(user);
             }
@@ -119,6 +125,8 @@ public class UserManager {
                         .region(resultSet.getString(6))
                         .gender(resultSet.getString(7))
                         .birthday(resultSet.getDate(8))
+                        .picUrl(resultSet.getString(9))
+
 
                         .build();
             }
@@ -153,6 +161,8 @@ public class UserManager {
                         .region(resultSet.getString(6))
                         .gender(resultSet.getString(7))
                         .birthday(resultSet.getDate(8))
+                        .picUrl(resultSet.getString(9))
+
                         .build();
 
             }

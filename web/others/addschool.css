@@ -1,14 +1,17 @@
-#top{
 
-    margin: 150px;
-    text-align: center;
+#top {
+
+    margin: 100px;
+    text-align:center;
     padding: 8%;
     border: 2px solid grey;
     box-shadow: 2px 5px darkgrey;
     background: #ffffff87;
 }
+
 body{
-    background: url(../pic/books.jpg) 0 0;
+    text-align:center;
+    background: url("../pic/photo-1532012197267-da84d127e765.jpg") no-repeat center;
 
     background-size: cover;
 }
@@ -16,5 +19,5 @@ body{
 .btn-primary{
     padding: 20px;
     font-size: 20px;
-    width: 200px;
+    width: 500px;
 }

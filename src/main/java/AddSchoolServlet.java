@@ -1,7 +1,6 @@
 
 import admin.SchoolManager;
 import model.School;
-import model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

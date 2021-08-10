@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <link rel="stylesheet" href="resources/bootstrap.min.css"/>
-<link rel="stylesheet" href="others/user.css"/>
+<link rel="stylesheet" href="others/addschool.css"/>
 <!DOCTYPE html>
 <html>
 <head>

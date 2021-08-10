@@ -4,12 +4,13 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="5">
+          <list size="6">
             <item index="0" class="java.lang.String" itemvalue="th:each" />
             <item index="1" class="java.lang.String" itemvalue="mytaglib:mytag" />
             <item index="2" class="java.lang.String" itemvalue="enumparam" />
             <item index="3" class="java.lang.String" itemvalue="font" />
             <item index="4" class="java.lang.String" itemvalue="face" />
+            <item index="5" class="java.lang.String" itemvalue="enctype" />
           </list>
         </value>
       </option>
@@ -18,7 +19,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="13">
+          <list size="14">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -32,6 +33,7 @@
             <item index="10" class="java.lang.String" itemvalue="p" />
             <item index="11" class="java.lang.String" itemvalue="th" />
             <item index="12" class="java.lang.String" itemvalue="user" />
+            <item index="13" class="java.lang.String" itemvalue="a" />
           </list>
         </value>
       </option>

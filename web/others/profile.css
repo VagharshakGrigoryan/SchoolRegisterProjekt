@@ -1,20 +1,20 @@
-#top{
+body {
+    background: url("../pic/books.jpg") no-repeat center;
 
-    margin: 150px;
+    background-size: cover;
+}
+
+#top {
+    margin: 15%;
     text-align: center;
     padding: 8%;
     border: 2px solid grey;
     box-shadow: 2px 5px darkgrey;
     background: #ffffff87;
 }
-body{
-    background: url(../pic/books.jpg) 0 0;
 
-    background-size: cover;
-}
-
-.btn-primary{
+.btn-primary {
     padding: 20px;
     font-size: 20px;
-    width: 200px;
+    width: 500px;
 }

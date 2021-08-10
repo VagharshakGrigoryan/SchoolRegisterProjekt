@@ -19,8 +19,7 @@
                 <button class="btn btn-primary">choose school</button>
             </a></h1>
         <br>
-        <br>
-        <br>
+
         <div style="text-align: center ">
             <br>
             <h2>

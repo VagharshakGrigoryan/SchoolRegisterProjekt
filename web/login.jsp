@@ -1,9 +1,9 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <link rel="stylesheet" href="resources/bootstrap.min.css"/>
 <link rel="stylesheet" href="others/login.css" />
+
 <div  style="text-align: center "><h1>
+
     <strong> <%if (request.getAttribute("msg")!=null){ %>
     </strong></h1>
 </div>

@@ -1,14 +1,17 @@
+<%@ page import="model.User" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Registration Page</title>
     <link rel="stylesheet" href="resources/bootstrap.min.css"/>
     <link rel="stylesheet" href="others/register.css"/>
+
 </head>
 <body>
 <div id="top">
-    <form method="Post" action="${pageContext.request.contextPath}/register">
+    <form method="Post" action="${pageContext.request.contextPath}/register" enctype="multipart/form-data">
 
         <div class="form-group">
             <label>Name</label>
@@ -80,7 +83,14 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+        <div class="form-group">
+            <label>Add profile picture</label>
+            <label>
+                <input type="file" name="picture"  aria-describedby="emailHelp"
+                       placeholder="Enter Your foto" required>
+            </label>
+        </div>
+        <tr>
                 <td>
                     <input type="submit" value="register">
                 </td>
